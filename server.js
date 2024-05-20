@@ -20,11 +20,11 @@ const app=express()
 // Rutas
 // Home Raiz
 app.get('/',(req,res) => {
-    res.sendFile('index.html',{root:'public'})
+    res.sendFile('index.html',{root:'src'})
 })
 // Ruta para registro
 app.get('/signup',(req,res) => {
-    res.sendFile('signup.html',{root: 'public'})
+    res.sendFile('signup.html',{root: 'src'})
 })
 app.post('/signup',(req,res) => {
     const { name, apeidos, email, password, number } = req.body
