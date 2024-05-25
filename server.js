@@ -11,11 +11,14 @@ const firebaseConfig = {
     storageBucket: "e-commerce-935d4.appspot.com",
     messagingSenderId: "537084206554",
     appId: "1:537084206554:web:e59b9847442fe9f0b734e3"
-  };
+}
 
 const firebase = initializeApp(firebaseConfig);
 const db=getFirestore()
 const app=express()
+
+app.use(express.static('src'))
+app.use(express.json())
 
 // Rutas
 // Home Raiz
@@ -67,7 +70,7 @@ app.post('/signup',(req,res) => {
 // Ruta Log in
 
 app.get('/login',(req,res) => {
-    res.sendFile('login.html',{root: 'public'})
+    res.sendFile('login.html',{root: 'src'})
 })
 app.post('/login',(req,res) => {
     let { email, password } = req.body

@@ -16,13 +16,13 @@ body {
     align-items: center;
 }
 .header-heading{
-    font-size: 100px;
+    font-size: 200px;
     text-transform: capitalize;
-    color: purple;
+    color: blue;
 }
 .header-heading span {
     /*color: #d5be8b;*/
-    color: darkorchid;
+    color: darkblue;
 }
 /* seccion central */ 
 .mid-section {
@@ -194,7 +194,7 @@ footer {
   }
   
   .menu > a {
-    color: darkorchid;
+    color: darkcyan;
     font-size: 32px;
     font-family: "Euclid Circular A";
     text-decoration: none;
