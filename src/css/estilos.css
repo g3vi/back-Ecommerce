@@ -21,7 +21,6 @@ body {
     color: blue;
 }
 .header-heading span {
-    /*color: #d5be8b;*/
     color: darkblue;
 }
 /* seccion central */ 
@@ -47,7 +46,7 @@ body {
 .section-info {
     width: 50%;
     height: 100%;
-    background: #FECFAA;
+    background: mediumaquamarine;
     display: block;
     margin-left: auto;
     padding: 50px;
@@ -86,8 +85,8 @@ body {
 /* Footer */
 footer { 
     font-family: 'Euclid Circular A';
-    background: #190c05;
-    color: #7CB5D2;
+    background: mediumaquamarine;
+    color: goldenrod;
     width: 100%;
     height: 60px;
     line-height: 60px;
@@ -121,7 +120,6 @@ footer {
     left: -10%;
     width: 120%;
     height: 120%;
-    /*background-image: url("../img/");*/
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -143,8 +141,8 @@ footer {
     height: 72px;
     padding-left: 20px;
     padding-right: 72px;
-    background: darkgray;
-    color: #f9f9f9;
+    background: mediumaquamarine;
+    color: whitesmoke;
   }
   
   .navbar > button {
@@ -163,14 +161,14 @@ footer {
     place-items: center;
     width: 72px;
     height: 72px;
-    /*background-image: url("../img/");*/
+    background-image: url("../img/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
   
-  /*body.open .navbar-burger {
-    background-image: url("../img/");
-  }*/
+  body.open .navbar-burger {
+    background-image: url("../img/close.svg");
+  }
   .menu {
     z-index: 2;
     top: 0;

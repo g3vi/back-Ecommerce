@@ -17,6 +17,7 @@ const firebase = initializeApp(firebaseConfig);
 const db=getFirestore()
 const app=express()
 
+// Agregadas las dos lineas, faltantes.
 app.use(express.static('src'))
 app.use(express.json())
 
@@ -103,7 +104,14 @@ app.post('/login',(req,res) => {
     })
 })
 
+// Ruta Contacto
 
+// Ruta Productos
+
+
+app.get('/contacto',(req,res) => {
+    res.sendFile('contacto.html',{root:'src'})
+})
 
 
 app.listen(8080,()=>{

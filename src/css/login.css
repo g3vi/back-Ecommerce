@@ -8,7 +8,7 @@
     height: 100%;
   }
   
-  @keyframes rotate {
+  @keyframes clouds {
     100% {
       background-position: 15% 50%;
     }
@@ -19,11 +19,11 @@
     place-items: center;
     margin: 0;
     padding: 0 24px;
-    /*background-image: url("../img/");*/
+    background-image: url("../img/huellas.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Euclid Circular A";
-    color: #000;
+    color: darkgoldenrod;
     animation: clouds 15s infinite alternate linear;
   }
   
@@ -40,7 +40,7 @@
     margin: 0 20px;
     padding: 70px 30px 44px;
     border-radius: 1.25rem;
-    background: #FECFAA;
+    background: darkcyan;
     text-align: center;
   }
   
@@ -58,7 +58,7 @@
   }
   
   .login-card > h3 {
-    color: rgba(0, 0, 0, 0.38);
+    color: goldenrod;
     margin: 0 0 30px;
     font-weight: 500;
     font-size: 1rem;
@@ -78,7 +78,7 @@
   }
   
   .login-form > input {
-    border: 2px solid #ebebeb;
+    border: 2px solid darkgray;
     font-family: inherit;
     font-size: 16px;
     padding: 0 16px;
@@ -90,8 +90,8 @@
     height: 56px;
     padding: 0 16px;
     border-radius: 0.5rem;
-    background: darkorchid;
-    color: #f9f9f9;
+    background: green;
+    color: whitesmoke;
     border: 0;
     font-family: inherit;
     font-size: 1rem;
@@ -102,12 +102,13 @@
   }
   
   .login-form > a {
-    color: #216ce7;
+    color: gold;
     font-size: 1rem;
     text-align: left;
     text-decoration: none;
     margin-bottom: 6px;
   }
+  
 /* NavBar*/
 * {
     box-sizing: border-box;
@@ -133,7 +134,7 @@
     left: -10%;
     width: 120%;
     height: 120%;
-    /*background-image: url("../img/");*/
+    background-image: url("../img/huellas.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -155,8 +156,8 @@
     height: 72px;
     padding-left: 20px;
     padding-right: 72px;
-    background: darkgray;
-    color: #f9f9f9;
+    background: mediumaquamarine;
+    color: whitesmoke;
   }
   
   .navbar > button {
@@ -175,14 +176,14 @@
     place-items: center;
     width: 72px;
     height: 72px;
-    /*background-image: url("../img/");*/
+    background-image: url("../img/menu.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
   
-  /*body.open .navbar-burger {
-    background-image: url("../img/");
-  }*/
+  body.open .navbar-burger {
+    background-image: url("../img/close.svg");
+  }
   .menu {
     z-index: 2;
     top: 0;
@@ -206,7 +207,7 @@
   }
   
   .menu > a {
-    color: darkorchid;
+    color: darkcyan;
     font-size: 32px;
     font-family: "Euclid Circular A";
     text-decoration: none;

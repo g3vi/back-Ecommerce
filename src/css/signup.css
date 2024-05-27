@@ -29,45 +29,46 @@
   
   @keyframes clouds {
     100% {
-      translate: -50vw -55%;
-      scale: 1 1.1;
+      background-position: 15% 50%;
     }
   }
-  
-  .twinkle-star {
-    position: fixed;
-    top: 30%;
-    left: 0;
-    width: 3000px;
-    height: 1500px;
-    translate: 0% -50%;
+
+  body {
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("../img/huellas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Euclid Circular A";
+    color: darkgoldenrod;
     animation: clouds 15s infinite alternate linear;
   }
-  
+
   .signup {
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 70%;
-    max-width: 460px;
-    padding: 200px 90px;
-    background: #ea899a;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    margin: 0 20px;
+    padding: 70px 30px 44px;
+    border-radius: 1.25rem;
+    background: darkcyan;
+    text-align: center;
   }
   
   .signup > h2 {
     font-size: 32px;
     font-weight: 600;
     margin: 0 0 6px;
-    color: rgb(255 255 255 / 96%);
+    color: goldenrod;
   }
   
   .signup > h3 {
     font-size: 16px;
     font-weight: 400;
     margin: 0 0 30px;
-    color: rgb(255 255 255 / 40%);
+    color: gold;
   }
   
   .form {
@@ -88,13 +89,13 @@
     left: 0;
     font-size: 22px;
     pointer-events: none;
-    color: rgb(255 255 255 / 40%);
+    color: gold;
   }
   
   .textbox input {
     padding: 0 24px 0 36px;
     border-bottom: 2px solid #2b3442;
-    color: rgb(255 255 255 / 96%);
+    color: gold;
     height: 72px;
   }
   
@@ -104,15 +105,15 @@
   }
   
   input:focus ~ label {
-    color: #216ce7;
+    color: red;
   }
   
   input:focus {
-    border-color: #216ce7;
+    border-color: red;
   }
   
   :is(input:focus, input:valid) ~ span {
-    color: rgb(255 255 255 / 96%);
+    color: red;
   }
   
   .textbox label {
@@ -120,32 +121,35 @@
     top: 50%;
     left: 36px;
     translate: 0 -50%;
-    color: rgb(255 255 255 / 40%);
+    color: gold;
     pointer-events: none;
     transition: 0.4s;
   }
   
   .form button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     cursor: pointer;
-    padding: 0 24px;
-    border-radius: 6px;
-    background: darkorchid;
-    color: #f9f9f9;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    border-radius: 0.5rem;
+    background: green;
+    color: whitesmoke;
     border: 0;
     font-family: inherit;
+    font-size: 1rem;
     font-weight: 600;
+    text-align: center;
+    letter-spacing: 2px;
+    transition: all 0.375s;
   }
   
   .signup p {
     margin: 0 0 22px;
-    color: #778395;
+    color: darksalmon;
   }
   
   .signup p > a {
-    color: #216ce7;
+    color: darkblue;
     text-decoration: none;
   }
   /* NavBar */
@@ -186,17 +190,17 @@ body.open .background {
 
 .navbar {
   z-index: 1;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 72px;
-  padding-left: 20px;
-  padding-right: 72px;
-  background: darkgray;
-  color: #f9f9f9;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 72px;
+    padding-left: 20px;
+    padding-right: 72px;
+    background: mediumaquamarine;
+    color: whitesmoke;
 }
 
 .navbar > button {
@@ -208,21 +212,21 @@ body.open .background {
 }
 
 .navbar-burger {
-  z-index: 3;
-  top: 0;
-  right: 0;
-  display: grid;
-  place-items: center;
-  width: 72px;
-  height: 72px;
-  /*background-image: url("../img/");*/
-  background-repeat: no-repeat;
-  background-position: center;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    width: 72px;
+    height: 72px;
+    background-image: url("../img/menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/*body.open .navbar-burger {
-  background-image: url("../img/");
-}*/
+body.open .navbar-burger {
+  background-image: url("../img/close.svg");
+}
 .menu {
   z-index: 2;
   top: 0;
