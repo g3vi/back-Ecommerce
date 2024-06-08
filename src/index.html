@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
     <link rel="stylesheet" href="./css/estilos.css">
@@ -16,16 +17,15 @@
 
     <!--- Creacion del navbar --->
     <nav class="navbar">
-        <img class="navbar-logo" src="./img/"/>
+		<h1 class="logo">PalPerro</h1>
     </nav>
-    <button class="navbar-burger" onclick="toggleMenu()"></button>
+	<button class="navbar-burger" onclick="toggleMenu()"></button>
     <nav class="menu">
         <a href="/" style="animation-delay: 0.1s">Home</a>
-        <a href="/contacto" style="animation-delay: 0.2s">Contacto</a>
-        <a href="/productos" style="animation-delay: 0.3s">Productos</a>
-        <a href="/login" style="animation-delay: 0.4s">Login</a>
-        <a href="/signup" style="animation-delay: 0.5s">Sign up</a>
-      </nav>
+        <a href="/productos" style="animation-delay: 0.2s">Productos</a>
+        <a href="/login" style="animation-delay: 0.3s">Login</a>
+        <a href="/signup" style="animation-delay: 0.4s">Signup</a>
+    </nav>
 
     <!--- Encabezado --->
     <header class="header-section">
@@ -34,6 +34,49 @@
             Mas Perro no se puede
         </h1>
     </header>
+
+	<!-- Informativo -->
+	
+	<section class="informative">
+		<div class="container">
+			<div class="row">
+				<div class="js-informative swipper-container">
+					<div class="swipper-wrapper">
+						<div class="service-item-container col-md swipper-slide p-0 px-md-3">
+							<div class="service-item mx-4 mx-md-0">
+								<div class="row align-items-center">
+									<div class="col-auto">
+										<svg class="icon-inline icon-5x svg-icon-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51"><path d="M25.5,0A25.5,25.5,0,1,0,51,25.5,25.53,25.53,0,0,0,25.5,0Zm0,50A24.5,24.5,0,1,1,50,25.5,24.53,24.53,0,0,1,25.5,50ZM39.11,28.83l-1.6.58L33,16.88a.53.53,0,0,0-.26-.29.5.5,0,0,0-.38,0l-12.64,4.6-1.11-3c0-.12-.71-2.84-3-2.91-1.06,0-4.93.06-5.09.06a.51.51,0,0,0-.49.51.55.55,0,0,0,.52.49s4-.1,5-.06c1.53.05,2.06,2.12,2.08,2.2l5.12,14.08a4,4,0,1,0,4.63,1.65l12.09-4.4a.5.5,0,1,0-.34-.94ZM20,22.12,25.9,20v0l1.6,4.39a.49.49,0,0,0,.47.33.51.51,0,0,0,.17,0,.5.5,0,0,0,.3-.64l-1.6-4.39v0l5.35-1.94,4.39,12.06-9.9,3.61A4,4,0,0,0,24,32.3l-.25,0ZM24,39.3a3,3,0,1,1,3-3A3,3,0,0,1,24,39.3Z"></path></svg>
+									</div>
+									<div class="col p-0">
+										<h3 class="h3 m-0">Recibe en menos de 24 horas. Puedes recibirlo hoy!</h3>
+										<p class="m-0"></p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="service-item-container col-md swiper-slide p-0 px-md-3">
+							<div class="service-item mx-4 mx-md-0">
+							<div class="row align-items-center">
+							<div class="col-auto">
+							<svg class="icon-inline icon-5x svg-icon-text" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 51"><path d="M40.19,24.12l-2.81-2.48v-6.7a1.32,1.32,0,0,0-1.32-1.32H32.81a1.32,1.32,0,0,0-1.31,1.32v1.51l-4.3-3.8a2.54,2.54,0,0,0-3.39,0l-13,11.5a1.4,1.4,0,0,0-.41,1,1.37,1.37,0,0,0,.33.85l1.13,1.25a1.57,1.57,0,0,0,1,.39,1.6,1.6,0,0,0,.8-.31v9.57A2.12,2.12,0,0,0,15.75,39h19.5a2.13,2.13,0,0,0,2.13-2.12V27.31h0a1.59,1.59,0,0,0,.79.3h.1a1.54,1.54,0,0,0,.92-.43l1.12-1.25a1.59,1.59,0,0,0,.3-.79.17.17,0,0,0,0-.1,1.57,1.57,0,0,0-.39-.89Zm-.65,1.19-1,1.18a.58.58,0,0,1-.26.13.79.79,0,0,1-.22-.08l-.8-.71a.51.51,0,0,0-.54-.08.5.5,0,0,0-.29.46V36.88A1.13,1.13,0,0,1,35.25,38H15.75a1.12,1.12,0,0,1-1.12-1.12V26.21a.51.51,0,0,0-.29-.46.52.52,0,0,0-.21,0,.5.5,0,0,0-.33.12l-.77.68a1.58,1.58,0,0,1-.2.12.61.61,0,0,1-.29-.11l-1.07-1.19a.52.52,0,0,1-.1-.2.41.41,0,0,1,.1-.25l13-11.49a1.89,1.89,0,0,1,1-.39,1.85,1.85,0,0,1,1,.4l5.14,4.54a.51.51,0,0,0,.54.08.51.51,0,0,0,.29-.46V14.94a.32.32,0,0,1,.31-.32h3.25a.33.33,0,0,1,.32.32v6.93a.51.51,0,0,0,.16.37l3,2.61a.57.57,0,0,1,.12.26A.64.64,0,0,1,39.54,25.31Z
+								M28.29,27.35a3.75,3.75,0,1,0-5.58,0,5.37,5.37,0,0,0-4.21,5.24,1.32,1.32,0,0,0,1.31,1.32H31.19a1.32,1.32,0,0,0,1.31-1.32A5.37,5.37,0,0,0,28.29,27.35Zm2.9,5.56H19.81a.31.31,0,0,1-.31-.32,4.38,4.38,0,0,1,4.38-4.37H24a.51.51,0,0,0,.49-.38.5.5,0,0,0-.25-.56,2.75,2.75,0,1,1,4-2.44,2.77,2.77,0,0,1-1.4,2.4.54.54,0,0,0-.16.72.49.49,0,0,0,.43.26,4.38,4.38,0,0,1,4.38,4.37A.31.31,0,0,1,31.19,32.91Z
+								M25.5,0A25.5,25.5,0,1,0,51,25.5,25.53,25.53,0,0,0,25.5,0Zm0,50A24.5,24.5,0,1,1,50,25.5,24.53,24.53,0,0,1,25.5,50Z"></path></svg>
+							</div>
+							<div class="col p-0">
+							<h3 class="h5 m-0">Quédate en casa</h3>
+							<p class="m-0"></p>
+							</div>
+							</div>
+							</div>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
     <!-- Parte central -->
     <section class="mid-section">
         <div class="section-item-container">
@@ -128,13 +171,74 @@
 		</div>
 	</section>
 
-    <!-- seccion final -->
-    <section class="end-section">
-        <div class="section-item-container">
-            <img src="" class="section-bg">
-        </div>
-    </section>
-    <footer>made by "g3vi"</footer>
+    <!-- seccion Novedades -->
+    <section class="novedades">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 text-center">
+					<h4 class="h4">Novedades</h4>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+    <footer>
+		<div class="container-fluid px-md-5">
+			<div class="row element-footer">
+				<div class="col-md mb-4">
+					<h4 class="h4">Contactanos</h4>
+					<a href="https://wa.me/+52413105543" class="contact-link"><i class="bi bi-whatsapp"></i><a>
+					<a href="mailto:gerarvieyraag@gmail.com" class="contact-link"> <i class="bi bi-envelope-at-fill"></i></a>
+				</div>
+				<div class="col-md mb-4">
+					<h4 class="h4">Sigamos conectados</h4>
+					<a class="social-icon-rounded" href="https://instagram.com/gerardvieyraag"><i class="bi bi-instagram"></i></a>
+					<a class="social-icon-rounded" href="https://facebook.com/gerardvieyraag"><i class="bi bi-facebook"></i></i></a>
+				</div>
+			</div>
+			<div class="divider mb-5"></div>
+			<div class="row element-footer">
+				<div class="col-md-9">
+					<div class="footer-payments-shipping-logos">
+						<div class="row mb-4">
+							<div class="col-md-4">
+								<h4 class="h4">Metodos de pago</h4>
+							</div>
+							<div class="col-md-8">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" class="icon-logo lazyloaded" alt="visa" width="60" height="45">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" class="icon-logo lazyloaded" alt="mastercard" width="60" height="45">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" class="icon-logo lazyloaded" alt="amex" width="60" height="45">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mx/oxxo@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mx/oxxo@2x.png" class="icon-logo lazyloaded" alt="mx_oxxo" width="60" height="45">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/maestro@2x.png" class="icon-logo lazyloaded" alt="maestro" width="60" height="45">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visadebit@2x.png" class="icon-logo lazyloaded" alt="visadebit" width="60" height="45">
+							</div>
+						</div>
+						<div class="row mb-4">
+							<div class="col-md-4">
+								<h4 class="h4">Opciones de envio</h4>
+							</div>
+							<div class="col-md-8">
+								<img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/1017@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/shipping/api/1017@2x.png" class="icon-logo ls-is-cached lazyloaded" alt="api_1017" width="60" height="45">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-legal">
+			<div class="row">
+				<div class="col-md-9 text-md-left mb-3 message">
+					<div class="d-inline-block copyright">Copyright PalPerro - 2024. Todos los derechos reservados.</div>
+				</div>
+				<div class="col-md text-left text-md-right">
+					<div class="powered-by">creado por g3vi</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
     <script type="text/javascript">
         const toggleMenu = () => {
           document.body.classList.toggle("open");

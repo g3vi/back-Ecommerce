@@ -145,11 +145,11 @@
   
   .signup p {
     margin: 0 0 22px;
-    color: darksalmon;
+    color: salmon;
   }
   
   .signup p > a {
-    color: darkblue;
+    color: blue;
     text-decoration: none;
   }
   /* NavBar */
@@ -177,7 +177,6 @@ button {
   left: -10%;
   width: 120%;
   height: 120%;
-  /*background-image: url("../img/");*/
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -200,64 +199,35 @@ body.open .background {
     padding-left: 20px;
     padding-right: 72px;
     background: mediumaquamarine;
-    color: whitesmoke;
+    color: goldenrod;
 }
 
-.navbar > button {
-  font-size: 28px;
-}
 
-.navbar-logo {
-  height: 55px;
-}
 
-.navbar-burger {
-    z-index: 3;
-    top: 0;
-    right: 0;
-    display: grid;
-    place-items: center;
-    width: 72px;
-    height: 72px;
-    background-image: url("../img/menu.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-body.open .navbar-burger {
-  background-image: url("../img/close.svg");
-}
-.menu {
-  z-index: 2;
-  top: 0;
-  left: 0;
+.contenedor { 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: 0.5s;
 }
 
-body.open .menu {
-  opacity: 1;
-  visibility: visible;
+.contenedor a:not(:last-child){
+  margin-right: 20px;
+ }
+
+.bi-shop {
+  color: gold; 
+  font-size: 30px; 
+  margin-right: 1px; 
 }
 
-.menu > a {
-  color: darkorchid;
-  font-size: 32px;
-  font-family: "Euclid Circular A";
-  text-decoration: none;
+.bi-house-fill {
+  color: gold; 
+  font-size: 30px; 
+  margin-right: 1px; 
 }
 
-body.open .menu > a {
-  animation: appear 0.3s both;
+.logo {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 12px;
 }
 
 @keyframes appear {
