@@ -1,7 +1,7 @@
 import express from "express"
 import bcrypt from "bcrypt"
 import { initializeApp } from 'firebase/app'
-import {getDoc, getFirestore, setDoc, collection, doc, updateDoc, getDocs, query, where } from 'firebase/firestore'
+import { getDoc, getFirestore, setDoc, collection, doc, updateDoc, getDocs, query, where } from 'firebase/firestore'
 // configuracion para firebase
 
 const firebaseConfig = {
@@ -11,7 +11,7 @@ const firebaseConfig = {
     storageBucket: "e-commerce-935d4.appspot.com",
     messagingSenderId: "537084206554",
     appId: "1:537084206554:web:e59b9847442fe9f0b734e3"
-}
+};
 
 const firebase = initializeApp(firebaseConfig);
 const db=getFirestore()
@@ -49,7 +49,7 @@ app.post('/signup',(req,res) => {
         const users = collection(db,"users")
         getDoc(doc(users,email)).then(user => {
             if(user.exists()){
-            res.json({'alert': 'email already exists'})
+                res.json({'alert': 'email already exists'})
             }else {
                 //encriptar password
                 bcrypt.genSalt(10,(err,salt)=> {
@@ -103,8 +103,6 @@ app.post('/login',(req,res) => {
         }
     })
 })
-
-// Ruta Contacto
 
 // Ruta Productos
 

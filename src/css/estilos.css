@@ -9,9 +9,6 @@ body {
 .header-section {
   width: 100%;
   height: 100vh;
-  background-image: url("../img/huellas.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,16 +16,38 @@ body {
 .header-heading{
   font-size: 100px;
   text-transform: capitalize;
-  color: blue;
+  color: #3b5998;
 }
 .header-heading span {
-    color: darkblue;
+  color: #d2691e;
 }
+
+/* carrusel */
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
 
 /* Seccion de Informacion */
 
+.mb-5 {
+  background: mediumseagreen;
+}
+
+.mbb-5 {
+  font-family: 'Euclid Circular A';
+  color: darkgoldenrod;
+  font-size: 30px;
+}
+.text-primary {
+  font-family: 'Euclid Circular A';
+  font-size: 40px;
+}
+
 .informative {
-  background: rgba(0, 0, 0, .1);
+  background-color: mediumaquamarine;
   margin-bottom: 70px;
   padding: 50px 0;
 }
@@ -106,16 +125,18 @@ body {
 }
 
 .col-md {
+  align-items: center;
+  justify-content: center;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   -ms-flex-positive: 1;
   flex-grow: 1;
   max-width: 100%;
   position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .ml-md-0, .mx-md-0 {
@@ -220,49 +241,94 @@ p {
 
 
 /* seccion central */ 
-.mid-section {
-    width: 100%;
-    height: 800px;
-    padding: 40px 5vw;
+
+.text-center {
+  text-align: center !important;
 }
-.section-item-container {
-    width: 100%;
-    height: 100%;
+
+.offset-md-2 {
+  margin-left: 16.666667%;
+}
+
+.col-md-8 {
+  -ms-flex: 0 0 66.666667%;
+  flex: 0 0 66.666667%;
+  max-width: 66.666667%;
+}
+
+.product-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.product-card > img{
+  max-width: 100%;
+  border-radius: 1rem;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.detalles-producto {
+  background-color: mediumaquamarine;
+    color: darkgoldenrod;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-top: -2rem;
     position: relative;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
 }
-.section-bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
+
+.producto-titulo {
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
 }
-.section-info {
-    width: 50%;
-    height: 100%;
-    background: mediumaquamarine;
-    display: block;
-    margin-left: auto;
-    padding: 50px;
-    text-align: center;
+
+.detalles-producto > h3 {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
-.title {
-    font-size: 45px;
-    line-height: 100px;
+
+.detalles-producto > p {
+  margin: 0;
+  padding: 0;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  unicode-bidi: isolate;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
 }
-.title span {
-    color: darkmagenta;
+
+.producto-agregar {
+  border: 0;
+  background-color: whitesmoke;
+  color: goldenrod;
+  padding: .4rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid var(--clr-white);
+  transition: background-color .2s, color .2s;
+  font-size: 20px;
 }
-.info {
-    font-family: 'Euclid Circular A';
-    font-size: 15px;
-    color: purple;
-    line-height: 45px;
-    margin-top: 25px;
-    opacity: 0.5;
-}
+
+
 /* seccion Final */
 .end-section {
     padding: 50px 5vw;
@@ -279,40 +345,72 @@ p {
     margin: 50px;
 }
 
-/* Novedades */
+/* Reviews */
 
-.novedades {
-  position: relative;
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+  text-align: center;
+  color: goldenrod;
+}
+.review-section {
+	padding: 50px 5vw;
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
+.review-container {
+	display: flex;
+  justify-content: center;
+	gap: 20px;
+	margin: 50px;
 }
 
-.row {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
+.review-card {
+	width: 250px;
+	height: auto;
+	font-family: 'lato', sans-serif;
 }
 
-.col-12 {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
+.user-dp {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
 }
 
-.text-center {
-  text-align: center !important;
+.user-dp img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0 auto;
 }
 
 
+.user-dp::after {
+	content: attr(data-rating);
+	position: absolute;
+	bottom: 0;
+	right: -20px;
+	padding: 5px 20px;
+	border-radius: 20px;
+	background-color: #3b5998;
+  color: goldenrod;
+}
+
+.review-title {
+	font-size: 20px;
+	line-height: 25px;
+	margin: 30px 0;
+	text-transform: capitalize;
+  color: royalblue;
+}
+
+.review {
+	opacity: 0.7;
+  font-family: 'Euclid Circular A';
+  color: darkolivegreen;
+}
 
 /* Footer */
 
@@ -526,6 +624,12 @@ p {
   
   body.open .menu > a {
     animation: appear 0.3s both;
+  }
+
+  .logo {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 0 0 12px;
   }
   
   @keyframes appear {

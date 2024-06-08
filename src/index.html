@@ -11,6 +11,9 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
@@ -34,6 +37,67 @@
             Mas Perro no se puede
         </h1>
     </header>
+
+		<!-- Carrrusel -->
+
+	<section>
+			<div class="container">
+				<br>
+				<div id="theCarousel" class="carousel slide" data-ride="carousel">
+				  <!-- Indicadores -->
+				  <ol class="carousel-indicators">
+					<li data-target="#theCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#theCarousel" data-slide-to="1"></li>
+					<li data-target="#theCarousel" data-slide-to="2"></li>
+					<li data-target="#theCarousel" data-slide-to="3"></li>
+					
+				  </ol>
+			  
+				  <div class="carousel-inner" role="listbox">
+					<div class="item active">
+					  <img src="https://img.tokyvideo.com/videos/361/3615/previews/previews_0012_custom_1561713028.0604.jpg" alt="Ilustracion" > 
+					   <div class="carousel-caption d-none d-md-block">
+				  <h3>Todo</h3>
+				  <p>Para tu Perro</p>
+				</div>
+					</div>
+			  
+				   
+				  
+					<div class="item">
+					  <img src="https://www.petmarkt.com.mx/cdn/shop/articles/fotos-koala-sur-outlet-guargacho-005-002_800x800.jpg?v=1643135720" alt="fotografia" width="600" height="424"> 
+					   <div class="carousel-caption d-none d-md-block">
+				  <h3> Somos a mejor opcion </h3>
+				  <p>Descubrelo</p>
+				</div>
+					</div>
+			  
+				   <div class="item">
+					  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8v6Fm4FdcwHXEGqf8RQAUqPhEe90Bd8NbA&s" alt="pintura" width="600" height="424">
+					   <div class="carousel-caption d-none d-md-block">
+				  <h3>Pongame el 7 Profe</h3>
+				  <p>Si trabaje bastante</p>
+				</div>
+					</div>
+					 <div class="item">
+					  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcgNesXZU7GEd9A3XEVFBbv6VjYG1p30nOFQ&s" alt="diseno" width="600" height="424"> 
+					   <div class="carousel-caption d-none d-md-block">
+				</div>
+					</div>
+			  
+			  
+				  <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">anterior</span>
+				  </a>
+				  <a class="right carousel-control" href="#theCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">siguiente</span>
+				  </a>
+				</div>
+			</div>
+			<div class="divider mb-5"></div>
+	</section>
 
 	<!-- Informativo -->
 	
@@ -75,113 +139,141 @@
 			</div>
 		</div>
 	</section>
+	<div class="divider mb-5"></div>
+	<div class="col-md-8 offset-md-2 text-center">
+		<h2 class="h1 text-primary">PalPerro</h2>
+		<p class="mbb-5">Tu perro lo es todo</p>
+	</div>
+	<div class="divider mb-5"></div>
 
-
-    <!-- Parte central -->
-    <section class="mid-section">
-        <div class="section-item-container">
-            <img src="" class="section-bg">
-            <div class="section-info">
-                <h1 class="title">
-                    Tu 
-                    <span>Perro</span>
-                    lo es todo
-                </h1>
-                <p class="info">
-                     En PalPerro nos enfocamos en proveer los mejores y mas variados productos para tu perro somos la mejor opcion.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- agregadas las dos siiguiientes secciones -->
     <!-- Productos mas vendidos -->
     <section class="best-selling-product-section">
 		<h1 class="section-title">Best Selling Products</h1>
 		<div class="product-container">
 			<div class="product-card">
-				<img src="img/" class="product-img">
-				<p class="product-name">Collar 🔜</p>
+				<img src="img/imgcollar.gif" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Collar para Perro</h3>
+					<p class="producto-precio">$100</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
 			</div>
 			<div class="product-card">
-				<img src="img/" class="product-img">
-				<p class="product-name">Shampoo 🔜</p>
+				<img src="img/imgshampoo.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Shampoo para Perro</h3>
+					<p class="producto-precio">$150</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
 			</div>
 			<div class="product-card">
-				<img src="img/" class="product-img">
-				<p class="product-name">Cama 🔜</p>
+				<img src="img/imgcama2.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Cama para Perro</h3>
+					<p class="producto-precio">$740</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
 			</div>
 			<div class="product-card">
-				<img src="img/" class="product-img">
-				<p class="product-name">Capa de Batman 🔜</p>
+				<img src="img/imgcapa2.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Capa de Batman para Perro</h3>
+					<p class="producto-precio">$600</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
 			</div>
 		</div>
+		<div class="product-container">
+			<div class="product-card">
+				<img src="img/imgcollar2.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Collar para Perro</h3>
+					<p class="producto-precio">$120</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
+			</div>
+			<div class="product-card">
+				<img src="img/imgshampo1.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Shampo para Perro</h3>
+					<p class="producto-precio">$180</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
+			</div>
+			<div class="product-card">
+				<img src="img/imgcama.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Cama para Perro</h3>
+					<p class="producto-precio">$530</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
+			</div>
+			<div class="product-card">
+				<img src="img/imgbatman.jpg" class="product-img">
+				<div class="detalles-producto">
+					<h3 class="producto-titulo">Disfraz de Batman para Perro</h3>
+					<p class="producto-precio">$1600</p>
+					<button class="producto-agregar" id="collar1">Agregar</button>
+				</div>
+			</div>
+		</div>
+		<div class="divider mb-5"></div>
 	</section>
 
     <!-- seccion de review -->
 	<section class="review-section">
 		<h1 class="section-title">
-			What our <span>customers</span> says about us 
+			What our customers says about us 
 		</h1>
 		<div class="review-container">
 			<div class="review-card">
-				<div class="user-dp" data-rating="4.9">
-					<img src="img/user 1.png">
+				<div class="user-dp" data-rating="4.0">
+					<img src="img/img1.jpg">
 				</div>
 				<h2 class="review-title">
-					you are the best... never thought that
+					Estoy encantada con mi compra. 
 				</h2>
 				<p class="review">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, odio!
+					El producto llegó en perfectas condiciones y exactamente como se describe en la página. Además, el envío fue rápido y el servicio al cliente fue excepcional.
+				</p>
+			</div>
+			<div class="review-card">
+				<div class="user-dp" data-rating="3.7">
+					<img src="img/img2.jpg">
+				</div>
+				<h2 class="review-title">
+					Esta tienda online ofrece una gran variedad de productos de alta calidad.
+				</h2>
+				<p class="review">
+					 He realizado múltiples compras y siempre he quedado satisfecho. Recomiendo totalmente esta tienda a otros compradores.
+				</p>
+			</div>
+			<div class="review-card">
+				<div class="user-dp" data-rating="4.5">
+					<img src="img/img3.jpg">
+				</div>
+				<h2 class="review-title">
+					Estoy muy impresionado con la atención al cliente de esta tienda en línea. 
+				</h2>
+				<p class="review">
+					Respondieron rápidamente a mis preguntas y resolvieron cualquier problema que tuve. ¡Bravo por el excelente servicio!
 				</p>
 			</div>
 			<div class="review-card">
 				<div class="user-dp" data-rating="4.9">
-					<img src="img/user 2.png">
+					<img src="img/img4.jpg">
 				</div>
 				<h2 class="review-title">
-					you are the best... never thought that
+					¡Este vendedor tiene un excelente sistema de devoluciones! 
 				</h2>
 				<p class="review">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, odio!
-				</p>
-			</div>
-			<div class="review-card">
-				<div class="user-dp" data-rating="4.9">
-					<img src="img/user 3.png">
-				</div>
-				<h2 class="review-title">
-					you are the best... never thought that
-				</h2>
-				<p class="review">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, odio!
-				</p>
-			</div>
-			<div class="review-card">
-				<div class="user-dp" data-rating="4.9">
-					<img src="img/user 4.png">
-				</div>
-				<h2 class="review-title">
-					you are the best... never thought that
-				</h2>
-				<p class="review">
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, odio!
+					Tuve que devolver un producto y el proceso fue sencillo y sin complicaciones. Recibí un reembolso completo rápidamente. ¡Muy confiable!
 				</p>
 			</div>
 		</div>
+		<div class="divider mb-5"></div>
 	</section>
-
-    <!-- seccion Novedades -->
-    <section class="novedades">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 text-center">
-					<h4 class="h4">Novedades</h4>
-				</div>
-				
-			</div>
-		</div>
-	</section>
+    
 
 	<!-- Footer -->
     <footer>
