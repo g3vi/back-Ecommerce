@@ -1,0 +1,152 @@
+[
+    {
+        "id": "ropa-01",
+        "titulo": "Capa de Batman",
+        "imagen": "./img/imgcapa2.jpg",
+        "categoria": {
+            "nombre": "Ropa",
+            "id": "ropa"
+        },
+        "precio": 600
+    },
+    {
+        "id": "ropa-02",
+        "titulo": "Disfraz Batman",
+        "imagen": "./img/imgbatman.jpg",
+        "categoria": {
+            "nombre": "Ropa",
+            "id": "ropa"
+        },
+        "precio": 1600
+    },
+    {
+        "id": "cama-01",
+        "titulo": "Cama para Perro",
+        "imagen": "./img/imgcama.jpg",
+        "categoria": {
+            "nombre": "Camas",
+            "id": "camas"
+        },
+        "precio": 530
+    },
+    {
+        "id": "cama-02",
+        "titulo": "Cama para Perro",
+        "imagen": "./img/imgcama1.jpg",
+        "categoria": {
+            "nombre": "Camas",
+            "id": "camas"
+        },
+        "precio": 740
+    },
+    {
+        "id": "cama-03",
+        "titulo": "Cama para Perro",
+        "imagen": "./img/imgcama2.jpg",
+        "categoria": {
+            "nombre": "Camas",
+            "id": "camas"
+        },
+        "precio": 740
+    },
+    {
+        "id": "cama-04",
+        "titulo": "Cama para Perro",
+        "imagen": "./img/imgcama3.jpg",
+        "categoria": {
+            "nombre": "Camas",
+            "id": "camas"
+        },
+        "precio": 740
+    },
+    {
+        "id": "cama-05",
+        "titulo": "Cama para Perro",
+        "imagen": "./img/imgcama4.jpg",
+        "categoria": {
+            "nombre": "Camas",
+            "id": "camas"
+        },
+        "precio": 740
+    },
+    {
+        "id": "collar-01",
+        "titulo": "Collar para Perro",
+        "imagen": "./img/imgcollar.jpg",
+        "categoria": {
+            "nombre": "Collares",
+            "id": "collares"
+        },
+        "precio": 100
+    },
+    {
+        "id": "collar-02",
+        "titulo": "Collar para Perro",
+        "imagen": "./img/imgcollar2.jpg",
+        "categoria": {
+            "nombre": "Collares",
+            "id": "collares"
+        },
+        "precio": 120
+    },
+    {
+        "id": "collar-03",
+        "titulo": "Collar para Perro",
+        "imagen": "./img/imgcollar3.jpg",
+        "categoria": {
+            "nombre": "Collares",
+            "id": "collares"
+        },
+        "precio": 140
+    },
+    {
+        "id": "collar-04",
+        "titulo": "Collar para Perro",
+        "imagen": "./img/imgcollar4.jpg",
+        "categoria": {
+            "nombre": "Collares",
+            "id": "collares"
+        },
+        "precio": 200
+    },
+    {
+        "id": "shampo-01",
+        "titulo": "Shampo para Perro",
+        "imagen": "./img/imgshampoo.jpg",
+        "categoria": {
+            "nombre": "Shampo",
+            "id": "shampo"
+        },
+        "precio": 150
+    },
+    {
+        "id": "shampo-02",
+        "titulo": "Shampo para Perro",
+        "imagen": "./img/imgshampo1.jpg",
+        "categoria": {
+            "nombre": "Shampo",
+            "id": "shampo"
+        },
+        "precio": 180
+    },
+    {
+        "id": "shampo-02",
+        "titulo": "Shampo para Perro",
+        "imagen": "./img/imgshampo2.jpg",
+        "categoria": {
+            "nombre": "Shampo",
+            "id": "shampo"
+        },
+        "precio": 350
+    },
+    {
+        "id": "shampo-03",
+        "titulo": "Shampo para Perro",
+        "imagen": "./img/imgshampo3.jpg",
+        "categoria": {
+            "nombre": "Shampo",
+            "id": "shampo"
+        },
+        "precio": 250
+    }
+]

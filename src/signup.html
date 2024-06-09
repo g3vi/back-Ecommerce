@@ -24,7 +24,7 @@
 
     <div class="signup">
         <h2>Crear cuenta</h2>
-        <form class="form">
+        <form id="form">
           <div class="textbox">
             <input type="text" id="name" autocomplete="off" placeholder="Nombre">
             <label>Nombre</label>
@@ -61,12 +61,15 @@
           </button>
         </form>
       </div>
-      <script type="text/javascript">
-        const toggleMenu = () => {
-          document.body.classList.toggle("open");
-        };
-      </script>
+<script type="text/javascript">
+  const toggleMenu = () => {
+  document.body.classList.toggle("open");
+  };
+</script>
+
+
     <script type="module" src="./js/common.js"></script>
     <script type="module" src="./js/form.js"></script>
+    
 </body>
 </html>
